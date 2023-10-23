@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin DashBoard</title>
+  <link rel="stylesheet" href="stylesmain.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</head>
+<body>
+  <div id="preloader"></div>
+  <div class="main-container">
+  <div class="side_navbar-container">
+    <nav>
+      <div class="side_navbar">
+        <span style="font-size: larger;">Main Menu</span>
+        <a href="main.html" class="active">Dashboard</a>
+        <a href="transaction.html">Transactions</a>
+        <a href="history.html">History</a>
+        <a href="converter.html">Financial Tools</a>
+
+        <div class="links">
+          <span style="font-size: larger;">Quick Link</span>
+          <a href="https://www.linkedin.com/company/codebrave/" target="_blank">Linkedin</a>
+          <a href="https://www.instagram.com/codebrave/" target="_blank">Instagram</a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<header>
+  <div class="items-container">
+    <div class="header">
+      <div class="logo">
+        <a href="main.html">BTL Bank</a>
+        
+        
+      </div>
+      
+
+      
+        
+        <div class="account">
+          
+          <h4 id="name">Your name</h4>
+        </div>
+        </div>
+  </div>
+      
+    </header>
+
+    <div class="main">
+      <h2>Welcome to your DashBoard</h2><br><h4>check your financies from here</h4>
+      
+      
+
+    </div>
+    <h2 id="title">Withdrawal activity :</h2>
+    
+    <div class="chart">
+      
+      <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+    
+    <div class="balance">
+      <h3>Total Balance</h3>
+      <p id="total-balance">$0.00</p>
+      <h3>Total Withdrawals</h3>
+      <p id="total-withdrawals">$0.00</p>
+      <h3>Total Deposits</h3>
+      <p id="total-deposits">$0.00</p>
+      
+      <h3>To-Do List :</h3>
+      
+  <input type="text" id="todo-input" placeholder="Enter a to-do">
+  <button id="add-todo">Add</button>
+
+
+    </div>
+    <iframe id="pre" width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe id="pre" width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        
+
+        
+
+      
+
+    
+<script src="script.js"></script>
+  
+</body>
+
+</html>

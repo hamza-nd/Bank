@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="stylehistory.css" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header class="header">
+      <div class="logo">
+        <a href="main.html">BTL Bank</a>
+        <span>History</span>
+      </div>
+    </header>
+    <div class="container">
+      <nav>
+        <div class="side_navbar">
+          <span style="font-size: larger;">Main Menu</span>
+          <a href="main.html">Dashboard</a>
+          <a href="transaction.html">Transactions</a>
+          <a href="history.html" class="active">History</a>
+          <a href="converter.html">Financial Tools</a>
+
+          <div class="links">
+            <span style="font-size: larger;">Quick Link</span>
+            <a href="https://www.linkedin.com/company/codebrave/" target="_blank">Linkedin</a>
+            <a href="https://www.instagram.com/codebrave/" target="_blank">Instagram</a>
+           
+          </div>
+        </div>
+      </nav>
+
+      <div class="container2">
+        <h3>Transaction History</h3>
+        <ul id="list" class="list">
+          <li class="plus">
+            <div class="date">01/01/2023</div>
+            <div class="amount">$100.00</div>
+            <div class="details">Deposit</div>
+            <div class="delete-btn">
+              <i class="fas fa-trash"></i>
+            </div>
+          </li>
+          <li class="minus">
+            <div class="date">02/01/2023</div>
+            <div class="amount">$50.00</div>
+            <div class="details">Withdrawal</div>
+            <div class="delete-btn">
+              <i class="fas fa-trash"></i>
+            </div>
+          </li>
+          <li class="plus">
+            <div class="date">03/01/2023</div>
+            <div class="amount">$200.00</div>
+            <div class="details">Transfer</div>
+            <div class="delete-btn">
+              <i class="fas fa-trash"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+
+
+    <script src="scripthistory.js"></script>
+  </body>
+</html>

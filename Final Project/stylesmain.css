@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(219, 219, 219);
+}
+
+#preloader {
+  background: white url(Spinning\ dollar.gif) no-repeat center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-size: 10%;
+}
+
+#pre {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+}
+
+.side_navbar {
+  background-color: #14213d;
+  color: #fff;
+  width: 15vw;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 20px;
+  position: fixed;
+  
+}
+
+
+.side_navbar span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 0 20px;
+}
+
+.side_navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.side_navbar a.active {
+  background-color: #e63946;
+}
+
+.side_navbar a:hover {
+  background-color: #1d2c4b;
+}
+
+.side_navbar .links {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+}
+
+.side_navbar .links a {
+  display: block;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.side_navbar .links a:hover {
+  color: #fff;
+}
+
+/* Add this CSS to make the "BTL Bank" logo clickable */
+.logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2rem 10rem 2rem 2rem;
+}
+
+/* Updated Dashboard Content Styling */
+.main {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin: 20px 16vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.chart {
+  background-color: #fff;
+  margin: 20px 16vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#title {
+  margin: 20px 16vw;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.balance {
+  color: #fff;
+  background-color: #1d2c4b;
+  width: 15%;
+  position: absolute;
+  top: 13%;
+  right: 0%;
+  height: fit-content;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.balance h3 {
+  margin-bottom: 10px;
+}
+
+#todo-input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+#add-todo {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.delete-task {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-task:hover {
+  background-color: #cc3c1a;
+}
+
+@media (max-width: 850px) {
+
+  
+  .side_navbar {
+    width: 100%;
+    position: static;
+    background-color: #1d2c4b;
+  }
+
+  .main,
+  .chart,
+  #title {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  .balance {
+    width: 100%;
+    position: static;
+    border-radius: 0;
+    margin-top: 20px;
+}
+}
+

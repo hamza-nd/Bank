@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction</title>
+  <link rel="stylesheet" href="stylestransaction.css">
+</head>
+<body>
+  <div id="preloader"></div>
+  <header class="header">
+    <div class="logo">
+      <a href="main.html" style="text-decoration: none;">BTL Bank</a>
+      <span>Transactions</span>
+    </div>
+  </header>
+  <div class="container">
+    <nav>
+      <div class="side_navbar">
+        <span style="font-size: larger;">Main Menu</span>
+        <a href="main.html">Dashboard</a>
+        <a href="transaction.html" class="active">Transactions</a>
+        <a href="history.html">History</a>
+        <a href="converter.html">Financial Tools</a>
+
+        <div class="links">
+          <span style="font-size: larger;">Quick Link</span>
+          <a href="https://www.linkedin.com/company/codebrave/" target="_blank">Linkedin</a>
+          <a href="https://www.instagram.com/codebrave/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container2">
+      <h2 style="border-top: 5px; text-align: center;">Your Balance</h2>
+      <h1 id="balance" style="text-align: center;">$0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Deposits</h4>
+          <p id="money-plus" class="money plus">+$0.00</p>
+        </div>
+        <div>
+          <h4>Withdrawals</h4>
+          <p id="money-minus" class="money minus">-$0.00</p>
+        </div>
+      </div>
+
+      <h3 style="display: none;">History</h3>
+      <ul id="list" class="list" style="display: none;">
+
+      </ul>
+
+      <h3>Add new transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Text</label>
+          <input type="text" id="text" placeholder="Enter text..." />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter amount..." />
+        </div>
+        <button class="btn">Add transaction</button>
+      </form>
+
+      <div class="send-money-container">
+        <h3>Send Money</h3>
+        <form id="send-form">
+          <div class="form-control">
+            <label for="recipient-name">Recipient's Name</label>
+            <input type="text" id="recipient-name" placeholder="Enter recipient's name..." />
+          </div>
+          <div class="form-control">
+            <label for="account-number">Recipient's Account Number</label>
+            <input type="text" id="account-number" placeholder="Enter recipient's account number..." />
+          </div>
+          <div class="form-control">
+            <label for="send-amount">Amount to Send</label>
+            <input type="number" id="send-amount" placeholder="Enter amount to send..." />
+          </div>
+          <button class="btn">Send Money</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="scripttransaction.js"></script>
+</body>
+</html>

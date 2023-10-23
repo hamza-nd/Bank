@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Set the colors and fonts */
+:root {
+  --primary-color: #2ecc71;
+  --secondary-color: #c0392b;
+  --font-family: "Poppins", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container2 {
+  grid-column: 1;
+}
+
+/* Use CSS animations */
+.money {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Reset and common styles */
+
+
+body {
+  background: rgb(219, 219, 219);
+}
+#preloader{
+  background: white url(Spinning\ dollar.gif) no-repeat center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-size: 10%;
+}
+#pre{
+  display: none;
+}
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px;
+  background: #fff;
+}
+
+.logo a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2rem 8rem 2rem 2rem;
+}
+
+/* Sidebar */
+.side_navbar {
+  background-color: #14213d;
+  color: #fff;
+  width: 15vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding-top: 20px;
+  height: 100vh;
+}
+
+.side_navbar span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 0 20px;
+}
+
+.side_navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.side_navbar a.active {
+  background-color: #e63946;
+}
+
+.side_navbar a:hover {
+  background-color: #1d2c4b;
+}
+
+.side_navbar .links {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+}
+
+.side_navbar .links a {
+  display: block;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.side_navbar .links a:hover {
+  color: #fff;
+}
+
+/* Content */
+.container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.container2 {
+  background-color: #fff;
+   
+  width: calc(100% - 15vw);
+  
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .side_navbar {
+    width: 100%;
+    position: static;
+    background-color: #1d2c4b;
+  }
+
+
+
+  .container2 {
+    background-color: #fff;
+    padding: 20px;
+    width: 105.5%; /* Use full width of the screen for the content */
+    margin: 0; /* Remove margin */
+    z-index: 1;
+    position: relative;
+    left: -3%;
+  }
+
+ 
+
+  .container {
+    overflow-y: visible;
+    width: 100%; /* Use full width of the screen for the entire container */
+  }
+}
